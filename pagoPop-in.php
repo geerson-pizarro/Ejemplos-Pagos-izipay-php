@@ -41,7 +41,40 @@ $formToken = $response["answer"]["formToken"];
   <meta name="viewport" 
    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <style>
+  
+  .kr-popin-modal-header-background-image{
+    background-color: #80D2CE!important;
+  }
+
+  .kr-popin-modal-footer{
+    //display: none;
+    background-color: #80D2CE!important;
+  }
+
+  .kr-logo-mcw{
+    display: none;
+  }
+
+  .kr-header-logo{
+    background-color: #80D2CE!important;
+  }
+
+  .kr-payment-button{
+    background-color: #80D2CE!important;
+  }
+
+  .kr-popin-button{
+    background-color: #80D2CE!important;
+  }
+
+  .kr-embedded{
+    background-color: #E64442!important;
+  }
+
+  </style>  
 
   <!-- Javascript library. Should be loaded in head section -->
   <!--En la etiqueta kr-post-url-success Colocar el archivo de redireccion o URL (RECORDAR)-->
@@ -54,14 +87,14 @@ $formToken = $response["answer"]["formToken"];
   <!-- theme and plugins. should be loaded after the javascript library -->
   <!-- not mandatory but helps to have a nice payment form out of the box -->
   <link rel="stylesheet" 
-   href="<?php echo $client->getClientEndpoint();?>/static/js/krypton-client/V4.0/ext/classic-reset.css">
+   href="<?php echo $client->getClientEndpoint();?>/static/js/krypton-client/V4.0/ext/classic.css">
   <script 
    src="<?php echo $client->getClientEndpoint();?>/static/js/krypton-client/V4.0/ext/classic.js">
   </script>
 </head>
 <body>
   <!-- payment form -->
-  <div class="kr-embedded" 
+  <div class="kr-embedded"
    kr-popin
    kr-form-token="<?php echo $formToken;?>">
 
