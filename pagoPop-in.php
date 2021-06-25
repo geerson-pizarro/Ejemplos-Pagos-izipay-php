@@ -81,7 +81,7 @@ $formToken = $response["answer"]["formToken"];
   <script 
    src="<?php echo $client->getClientEndpoint();?>/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js" 
    kr-public-key="<?php echo $client->getPublicKey();?>" 
-   kr-post-url-success="https://www.google.com.pe">
+   kr-post-url-success="respuesta.php">
   </script>
 
   <!-- theme and plugins. should be loaded after the javascript library -->
