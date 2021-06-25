@@ -32,6 +32,6 @@ $orderStatus = $formAnswer['orderStatus'];
 $orderId = $formAnswer['orderDetails']['orderId'];
 $transactionUuid = $transaction['uuid'];
 
-echo $orderStatus.'||'.$orderId.'||'.$transactionUuid;
+echo json_encode($formAnswer);
 
 ?>
